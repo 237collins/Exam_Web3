@@ -9,6 +9,7 @@ form {
 }
 header {
     text-align: center;
+    padding-top: 10px;
 }
 form {
     display: flex;
@@ -17,32 +18,62 @@ form {
 section {
     width: 400px;
     height: 500px;
-    border: 2px solid blue;
+    border: 2px solid rgb(154, 154, 251);
     border-radius: 20px;
     padding: 20px;
-    /* display: flex; */
     align-items: center;
-    /* justify-content: center; */
 }
+
 /* Input part  */
 
 input {
-    width: 390px;
+    width: 385px;
     height: 35px;
     border-radius: 4px;
     border: 1px solid #ccc;
+    padding-left: 10px;
+    transition: box-shadow 0.3s ease;
+    /* cursor: pointer; */
 
 }
 
 /* remember part */
 
+input :focus {
+    border: #f03c18;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8);
+    
+}
+
 input :hover {
-    border: #1b71f2;
-    box-shadow: 5px 0px 5px rgba(5, 72, 187, 1);
+    border: #f03c18;
+    box-shadow: 2px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+h4 {
+    color: #4f4f4f;
+}
+
+#clic {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+
 }
 
 
-button {
+.me {
+    margin-top: 40px;
+    margin-bottom: 0;
+    
+}
+
+.remb {
+    display: grid;
+    grid-template-columns: 1fr 13fr;
+    margin-top: 40px;
+    cursor: pointer;
+    color: #4f4f4f;
 
 }
 
@@ -51,13 +82,27 @@ button {
     width: 390px;
     height: 50px;
     font-size: 20px;
-    background-color: #ffbb00;
+    background-color: #ffd900;
     border-radius: 4px;
-    border: 1px solid #ccc;
-    margin-bottom: 60px;
+    border: 1px solid #dfdfdf;
+    margin-top: 40px;
+    margin-bottom: 45px;
+    cursor: pointer;
+    color: #4f4f4f;
 }
 
+.log:hover {
+    outline: none;
+    background-color: #3995f1;
+}
+
+
+button:hover {
+    color: white;
+}
 a {
     padding-top: 50px;
     margin-left: 50%;
+    color: #767575;
+
 }
